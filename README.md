@@ -8,4 +8,4 @@ Projeto loja de moda feminina
 'npm install'
 
 ## Para rodar o projeto
-'npm run start-dev'
+''npm run start-dev

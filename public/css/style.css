@@ -73,7 +73,6 @@ ul li:hover a {
 
 .banner {
   height: 600px;
-  background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

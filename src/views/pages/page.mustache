@@ -8,11 +8,12 @@
     {{/banner}}
 
     <div class="container list">
+    {{#list}}
       <div class="item">
-        <img src="img/foto01.jpg" class="item-image" />
-        <div class="item-name">Vestido Midi</div>
-        <div class="item-color">Cor: rosê</div>
-        <div class="item-tam">Tamanho: 42</div>
+        <img src="img/{{image}}" class="item-image" />
+        <div class="item-name">{{name}}</div>
+        <div class="item-color">{{color}}</div>
+        {{/list}}
       </div>
 
    

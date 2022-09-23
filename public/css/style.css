@@ -107,6 +107,7 @@ h2 {
 }
 
 .item-image {
+  overflow-x: auto;
   width: 250px;
   height: 250px;
   border-radius: 10px;

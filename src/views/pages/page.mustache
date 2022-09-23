@@ -1,20 +1,28 @@
 {{>partials/header}}
 
 {{#banner}}
-
- <section class="banner" style = " background-image: url('img/{{ background }}');">{{ title }}</section>
+<section class="banner" style="background-image: url('img/{{ background }}')">{{ title }}</section>
 
     <h2>{{ title }} disponíveis</h2>
-    {{/banner}}
+{{/banner}}
 
-    <div class="container list">
-    {{#list}}
-      <div class="item">
-        <img src="img/{{image}}" class="item-image" />
-        <div class="item-name">{{name}}</div>
-        <div class="item-color">{{color}}</div>
-        {{/list}}
-      </div>
+     <div class="container list">
 
-   
+      {{#list}}
+        <div class="item">
+          <img src="img/{{ image }}" class="item-image" />
+          <div class="item-name">{{ name }}</div>
+          <div class="item-color">{{ color }}</div>
+        </div>  
+      {{/list}}
+    </div>
+
+  {{^list}}
+  <div class="container no-list">
+    <img src="img/aviso.png">
+    <h2>Produto não encontrado!</h2>
+  </div>
+  {{/list}}
+
+
 {{>partials/footer}}

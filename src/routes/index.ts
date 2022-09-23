@@ -11,6 +11,4 @@ router.get("/joias", PageController.joias);
 
 router.get("/search", SearchController.search);
 
-
-
 export default router;

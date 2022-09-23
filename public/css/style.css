@@ -21,6 +21,11 @@ body {
   margin: auto;
 }
 
+.container img {
+  margin: auto;
+  display: block;
+}
+
 header {
   font-size: 28px;
   padding: 10px 0;
@@ -63,7 +68,7 @@ ul li a {
   padding: 5px 15px;
   border-radius: 10px;
   font-size: 20px;
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Abril Fatface', cursive;
 }
 
 ul li.active a,
@@ -82,7 +87,7 @@ ul li:hover a {
   font-size: 68px;
   font-weight: bold;
   text-shadow: 5px 5px 4px var(--lightbg);
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Abril Fatface', cursive;
 }
 
 h2 {
@@ -92,7 +97,7 @@ h2 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
-  font-family: "Abril Fatface", cursive;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .list {

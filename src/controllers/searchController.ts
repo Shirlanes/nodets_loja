@@ -1,14 +1,20 @@
-import { Request, Response } from "express";
-import { createMenuObject } from "../helpers/createMenuObject";
-import { Clothe } from "../models/clothe";
+import { Request, Response } from 'express';
+import { Clothe } from '../models/clothe';
+import { createMenuObject } from '../helpers/createMenuObject';
 
 export const search = (req: Request, res: Response) => {
-    let query: string = req.query.q as string;
+  let query: string = req.query.q as string;
 
-    let list = Clothe.getFromName(query);
+  if (!query) {
+    res.redirect('/');
+    return;
+  }
 
-    res.render('pages/page', {
-        menu: createMenuObject(''),
-        list,
-    });
+  let list = Clothe.getFromName(query);
+
+  res.render('pages/page', {
+    menu: createMenuObject(''),
+    list,
+    query,
+  });
 };
